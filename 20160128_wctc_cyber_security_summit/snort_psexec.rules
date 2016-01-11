@@ -1,0 +1,1 @@
+alert tcp any any -> any 445 (msg:"psexec service created"; flow:to_server,established; content:"|FF 53 4D 42|"; dce_opnum:12; reference:url,https://www.snort.org/faq/readme-dcerpc2; classtype:bad-unknown; sid:31337; rev:1;)
